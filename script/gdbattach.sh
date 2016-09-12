@@ -5,8 +5,9 @@ if [ "$#" -eq 1 ]; then
     if [ ! "$pid" ]; then
         echo "No such process: $1"
     else
-       ~/gdb -p $pid
+       echo "Find process $1 with pid: $pid"
+       gdb -p $pid
     fi
 else
-    echo "Usage: ga [process name]"
+    echo "Usage: ./gdbattach.sh [process name]"
 fi 
