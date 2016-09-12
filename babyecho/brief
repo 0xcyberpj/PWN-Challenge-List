@@ -1,0 +1,9 @@
+a simple 32-bit format string attack
+
+Remind
+1. filter %n to _n
+
+Attack step
+1. use format string attack to read more bytes
+2. use format string attack to reach maximum read bytes
+3. use format string attack to patch printf's return address
