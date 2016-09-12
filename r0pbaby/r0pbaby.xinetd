@@ -1,0 +1,17 @@
+# default: off
+# description: An xinetd internal service which echo's characters back to
+# clients.
+# This is the tcp version.
+service r0pbaby
+{
+	disable		= no
+	socket_type	= stream
+	protocol	= tcp
+	wait		= no
+	user		= davis
+    bind        = 0.0.0.0
+    server      = /home/davis/PWN/bata_24/r0pbaby/r0pbaby
+    type        = UNLISTED
+    port        = 1234
+}
+
